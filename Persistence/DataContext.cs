@@ -10,6 +10,7 @@ namespace Persistence
     public class DataContext: DbContext
     {
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<AddEmployee> EmployeeList { get; set; }
         public string DbPath {get;}
 
         public DataContext()
