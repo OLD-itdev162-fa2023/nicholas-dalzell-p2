@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Project 2';
-  employees: any;
+  title = 'Employee Database';
+  EmployeeList: any;
 
   constructor(private http: HttpClient) {
 
   }
   ngOnInit(): void {
-    this.http.get('http://localhost:5087/employee').subscribe(
-      response => { this.employees = response; },
+    this.http.get('http://localhost:5087/api/employeelist').subscribe(
+      response => { this.EmployeeList = response; },
       error => { console.log(error) }
     );
   }

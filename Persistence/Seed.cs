@@ -35,6 +35,9 @@ namespace Persistence
                         HireDate = DateTime.Now.AddDays(-3)
                     }
                 };
+
+                context.EmployeeList.AddRange(EmployeeList);
+                context.SaveChanges();
             }
         }
     }
