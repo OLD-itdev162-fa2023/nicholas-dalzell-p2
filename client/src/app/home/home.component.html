@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div *ngFor="let employee of EmployeeList">
+
+    <mat-card class = "post-card" routerLink="/EmployeeList/{{AddEmployee.id}}">
+    <mat-card-header>
+        <mat-card-title>Employee Name: {{employee.name}}</mat-card-title>
+        <mat-card-subtitle>Employee id: {{employee.id}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Employee Wage: ${{employee.wage}}</p>
+        <p>Employee HireDate: {{employee.hireDate} | date : 'shortDate'}</p>
+    </mat-card-content>
+    </mat-card>
+</div>
