@@ -17,7 +17,7 @@ namespace Persistence
                     new AddEmployee {
                         Name = "John Covington",
                         Wage = 25.00,
-                        HireDate = DateTime.Now.AddDays(-10)
+                        HireDate = DateTime.Now.AddDays(-200)
                     },
                     new AddEmployee {
                         Name = "Tina Thompson",
