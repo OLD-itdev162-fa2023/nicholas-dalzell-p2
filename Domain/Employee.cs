@@ -8,6 +8,4 @@ public class Employee
     public string JobTitle { get; set; }
 
     //public double Wage { get; set;};
-
-    public string? Summary { get; set; }
 }

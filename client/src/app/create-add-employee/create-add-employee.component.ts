@@ -19,14 +19,14 @@ export class CreateAddEmployeeComponent implements OnInit {
 
   createAddEmployee() {
     this.model.date = new Date();
-    this.http.post('http://localhost:5087/api/employeelist', this.model).subscribe(
+    this.http.post('http://localhost:5087/api/EmployeeList', this.model).subscribe(
       response => { this.home() },
       error => { console.log(error) }
     )
   }
 
   cancel() {
-    console.log("cancel create post");
+    this.home();
   }
 
   home() {

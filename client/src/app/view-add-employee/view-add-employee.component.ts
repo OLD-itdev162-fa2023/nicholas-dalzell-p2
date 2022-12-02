@@ -18,8 +18,8 @@ export class ViewAddEmployeeComponent implements OnInit {
 
   getAddEmployee() {
     let id = this.route.snapshot.paramMap.get('id');
-    this.http.get(`http://localhost:5087/api/employeelist/${id}`).subscribe(post => {
-      this.AddEmployee = this.AddEmployee;  
+    this.http.get(`http://localhost:5087/api/employeelist/${id}`).subscribe(AddEmployee => {
+      this.AddEmployee = AddEmployee;  
     });
   }
 

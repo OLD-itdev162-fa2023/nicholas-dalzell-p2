@@ -1,13 +1,23 @@
-.AddEmployee-form{
+.add-employee-form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 500px;
     margin: 40px auto;
+    
 }
 .form-field{
     width: 100%;
+    background-color: cadetblue;
+}
+.form-field2{
+    width: 100%;
+    background-color: cadetblue;
+}
+.form-field3{
+    width: 100%;
+    background-color: cadetblue;
 }
 .form-button{
-    margin-right: 10px;
+    margin: 20px;
 }

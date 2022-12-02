@@ -1,10 +1,10 @@
 .post-card {
     max-width: 500px;
-    margin: 40px;
+    margin: 40px auto;
     
 }
 
-.post-card:hover {
+.post-card:Hover {
     cursor:grab;
     background-color:cadetblue;
 }
