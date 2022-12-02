@@ -34,7 +34,7 @@ namespace Persistence.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<double>("Wage")
-                        .HasColumnType("REAL");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -47,7 +47,7 @@ namespace Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("JobTitle")
+                    b.Property<DateTime>("HireDate")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -55,7 +55,7 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Summary")
+                    b.Property<string>("Wage")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

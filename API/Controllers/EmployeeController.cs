@@ -25,7 +25,9 @@ public class EmployeeController : ControllerBase
         return Enumerable.Range(1, 5).Select(index => new Employee
         {
             Name = "John",
-            JobTitle = "worker"
+            Wage = 20.25,
+            HireDate = DateTime.Now.AddDays(-20)
+            //JobTitle = "worker"
         })
         .ToArray();
     }
@@ -39,7 +41,9 @@ public class EmployeeController : ControllerBase
         var employee = new Employee()
         {
             Name = "name",
-            JobTitle = "jobTitle"
+            Wage = 20.25,
+            HireDate = DateTime.Now.AddDays(-20)
+            //JobTitle = "jobTitle"
         };
 
         _context.Employees.Add(employee);

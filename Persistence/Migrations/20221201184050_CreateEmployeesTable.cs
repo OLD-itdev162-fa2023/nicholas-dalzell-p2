@@ -17,7 +17,7 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    Wage = table.Column<double>(type: "REAL", nullable: false),
+                    Wage = table.Column<double>(type: "TEXT", nullable: false),
                     HireDate = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -33,7 +33,7 @@ namespace Persistence.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     JobTitle = table.Column<string>(type: "TEXT", nullable: false),
-                    Summary = table.Column<string>(type: "TEXT", nullable: true)
+                    HireDate = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

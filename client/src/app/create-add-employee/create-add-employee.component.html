@@ -1,15 +1,15 @@
 <form #createAddEmployeeForm="ngForm" (ngSubmit)="createAddEmployee()" class = "add-employee-form">
     <mat-form-field appearance="fill" class="form-field">
         <mat-label>Name</mat-label>
-        <input matInput name="name" [(ngModel)]="model.Name" placeholder="Name">
+        <input matInput  [(ngModel)]="model.Name" name="name" placeholder="Name">
     </mat-form-field>
     <mat-form-field appearance="fill" class="form-field2">
         <mat-label>Wage</mat-label>
-        <input matInput wage="Wage" [(ngModel)]="model.Wage" placeholder="Wage">
+        <input matInput  [(ngModel)]="model.Wage"  wage="wage" placeholder="Wage">
     </mat-form-field>
     <mat-form-field appearance="fill" class="form-field3">
         <mat-label>Hire Date</mat-label>
-        <input matInput hireDate="HireDate" [(ngModel)]="model.HireDate" placeholder="Hire Date">
+        <input matInput  [(ngModel)]="model.HireDate" hireDate="hireDate" placeholder="Hire Date">
     </mat-form-field>
     <div class="form-field">
         <button mat-raised-button color="primary" type="submit" class="form-button">Add Employee</button>

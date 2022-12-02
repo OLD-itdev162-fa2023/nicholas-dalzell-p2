@@ -9,7 +9,7 @@ namespace Domain
     public class AddEmployee
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
+        public string Name  { get; set; }
         public double Wage { get; set; }
         public DateTime HireDate { get; set; }
     }
