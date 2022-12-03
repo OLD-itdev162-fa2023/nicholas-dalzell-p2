@@ -13,8 +13,9 @@
             name="hireDate" placeholder="Hire Date">
         <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker #picker></mat-datepicker>
-        <button mat-raised-button (click)="picker.open()">Open</button>
+        <button mat-raised-button class="date-button" (click)="picker.open()">Select Date</button>
     </mat-form-field>
+    
     
     <div class="form-field">
         <button mat-raised-button color="primary" type="submit" class="form-button">Add Employee</button>
