@@ -52,7 +52,6 @@ public class EmployeeController : ControllerBase
         {
             return employee;
         };
-        //throw error
         throw new Exception("Error creating employee.");
     }
 };

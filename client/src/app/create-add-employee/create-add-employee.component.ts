@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class CreateAddEmployeeComponent implements OnInit {
   model: any = {}
-
+  //constructor
   constructor(
     private http: HttpClient,
     private router: Router) { }

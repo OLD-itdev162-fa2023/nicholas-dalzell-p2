@@ -8,7 +8,6 @@ namespace Domain
     
     public class AddEmployee
     {
-        //employee properties
         public Guid Id { get; set; }
         public string Name  { get; set; }
         public double Wage { get; set; }

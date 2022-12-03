@@ -13,6 +13,7 @@ namespace Persistence
         public DbSet<AddEmployee> EmployeeList { get; set; }
         public string DbPath {get;}
 
+        //datacontext
         public DataContext()
         {
             var folder = Environment.SpecialFolder.LocalApplicationData;
