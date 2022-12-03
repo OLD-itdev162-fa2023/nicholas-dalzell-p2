@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateEmployeesTable : Migration
+    public partial class CreateEmployeeListTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,7 +17,7 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    Wage = table.Column<double>(type: "TEXT", nullable: false),
+                    Wage = table.Column<double>(type: "REAL", nullable: false),
                     HireDate = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -32,8 +32,8 @@ namespace Persistence.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    JobTitle = table.Column<string>(type: "TEXT", nullable: false),
-                    HireDate = table.Column<string>(type: "TEXT", nullable: false)
+                    Wage = table.Column<double>(type: "REAL", nullable: false),
+                    HireDate = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

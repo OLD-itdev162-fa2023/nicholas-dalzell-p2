@@ -11,8 +11,8 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221201184050_CreateEmployeesTable")]
-    partial class CreateEmployeesTable
+    [Migration("20221203181145_CreateEmployeeListTable")]
+    partial class CreateEmployeeListTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,7 +34,7 @@ namespace Persistence.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<double>("Wage")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 
@@ -48,15 +48,14 @@ namespace Persistence.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("HireDate")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Wage")
-                        .HasColumnType("TEXT");
+                    b.Property<double>("Wage")
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 

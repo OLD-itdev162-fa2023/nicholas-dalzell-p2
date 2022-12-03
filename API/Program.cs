@@ -46,4 +46,5 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
+//run app
 app.Run();

@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { ViewAddEmployeeComponent } from './view-add-employee/view-add-employee.component';
 import { CreateAddEmployeeComponent } from './create-add-employee/create-add-employee.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CreateAddEmployeeComponent } from './create-add-employee/create-add-emp
     MatButtonModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatNativeDateModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

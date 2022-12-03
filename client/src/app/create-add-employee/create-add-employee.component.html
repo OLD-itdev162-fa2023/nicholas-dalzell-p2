@@ -5,14 +5,22 @@
     </mat-form-field>
     <mat-form-field appearance="fill" class="form-field2">
         <mat-label>Wage</mat-label>
-        <input matInput  [(ngModel)]="model.Wage"  wage="wage" placeholder="Wage">
+        <input matInput  [(ngModel)]="model.Wage"  name="wage" placeholder="Wage">
     </mat-form-field>
-    <mat-form-field appearance="fill" class="form-field3">
+    <mat-form-field class="form-field3" appearance="fill">
         <mat-label>Hire Date</mat-label>
-        <input matInput  [(ngModel)]="model.HireDate" hireDate="hireDate" placeholder="Hire Date">
+        <input matInput [matDatepicker]="picker" [(ngModel)]="model.HireDate"
+            name="hireDate" placeholder="Hire Date">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker #picker></mat-datepicker>
+        <button mat-raised-button (click)="picker.open()">Open</button>
     </mat-form-field>
+    
     <div class="form-field">
         <button mat-raised-button color="primary" type="submit" class="form-button">Add Employee</button>
         <button mat-raised-button color="primary" type="button" class="form-button" (click)="cancel()">Cancel</button>
     </div>
 </form>
+
+
+

@@ -44,16 +44,15 @@ namespace Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("JobTitle")
-                        .IsRequired()
+                    b.Property<DateTime>("HireDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Summary")
-                        .HasColumnType("TEXT");
+                    b.Property<double>("Wage")
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 

@@ -95,7 +95,7 @@ namespace API.Controllers
             {
                 return Ok(AddEmployee);
             }
-
+            //throw error
             throw new Exception("Error updating employee");
         }
     }

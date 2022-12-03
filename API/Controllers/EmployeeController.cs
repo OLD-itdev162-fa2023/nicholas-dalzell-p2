@@ -8,7 +8,6 @@ namespace API.Controllers;
 [Route("[controller]")]
 public class EmployeeController : ControllerBase
 {
-
     private readonly ILogger<EmployeeController> _logger;
 
     private readonly DataContext _context;
@@ -53,7 +52,7 @@ public class EmployeeController : ControllerBase
         {
             return employee;
         };
-
+        //throw error
         throw new Exception("Error creating employee.");
     }
 };
